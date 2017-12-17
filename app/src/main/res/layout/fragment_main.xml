@@ -9,6 +9,8 @@
 
     <!--Content-->
     <LinearLayout
+        android:padding="15dp"
+        android:background="#b4ffffff"
         android:layout_margin="@dimen/margin"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -23,19 +25,21 @@
 
         <!--Show date-->
         <LinearLayout
-            android:layout_margin="@dimen/margin"
+
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <!--Icon-->
             <ImageView
-                android:src="@drawable/ic_action_date"
+                android:src="@drawable/ic_action_rate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <!--Text-->
             <TextView
+                android:text="2017-12-17"
+                android:textColor="@color/colorPrimaryDark"
                 android:layout_marginLeft="15dp"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -45,6 +49,27 @@
 
         </LinearLayout>
         <!--Show Rate-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_action_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="32.123"
+                android:layout_marginLeft="15dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
 
 
     </LinearLayout>
