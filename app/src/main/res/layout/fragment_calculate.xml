@@ -32,6 +32,7 @@
 
         <!--TextFiels-->
         <EditText
+            android:id="@+id/edtMoney"
             android:inputType="number"
             android:hint="USD"
             android:layout_width="match_parent"
@@ -41,6 +42,7 @@
     </LinearLayout>
     <!--Button Calculate-->
     <Button
+        android:id="@+id/btnCalculate"
         android:text="Calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

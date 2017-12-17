@@ -10,6 +10,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.pramual.firstandroidapp.MainActivity;
 import com.example.pramual.firstandroidapp.R;
@@ -25,6 +26,11 @@ public class MainFragment extends Fragment {
 
 //      Create Toolbar
         createToolbar();
+
+
+
+
+
 
 //        create Menu Icon
         setHasOptionsMenu(true);
@@ -60,7 +66,7 @@ public class MainFragment extends Fragment {
     private void myRelaceFragment(String moneyString, double factorDouble) {
         getActivity().getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.contentFragment, new CalculateFragment())
+                .replace(R.id.contentFragment, CalculateFragment.calculateInstance(moneyString, factorDouble))
                 .addToBackStack(null)
                 .commit();
 

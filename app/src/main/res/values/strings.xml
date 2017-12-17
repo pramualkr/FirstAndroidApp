@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">First Android App</string>
+    <string name="have_space">มีช่องว่าง</string>
+    <string name="message_space">Please Fill in the Blank</string>
 </resources>
